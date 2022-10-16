@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #483838;
+}
+
+#seleccionar-mascota{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+
+.titulo {
+    color:white;
+    font-family: 'Nabla', cursive;
+    font-size: 42px;
+}
+
+.subtitulo {
+    color:whitesmoke;
+    font-size: 16px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 180px;
+    height: 100px;
+    background: #42855B;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta-de-mokepon img{
+    width: 100px;
+    
+}
+
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;    
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+
+input{
+    display:none
+}
+input:checked + label {
+    background-color: #90B77D;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque{
+    background: #42855B;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    border-color: lightgray;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensajes{
+    width: 200px;
+    height: 100px;
+    background: #D2D79F;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    color: midnightblue;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#boton-reiniciar{
+    background: #42855B;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    border-color: lightgray;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ataque{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    font-family: 'Poppins', sans-serif;
+    color: lime;
+    text-align: center;
+}
+
+@media (max-width: 360px){
+    .tarjetas{
+    flex-direction: column;
+    }
+}
